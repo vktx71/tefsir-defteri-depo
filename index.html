@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tefsir Defteri - Flatpak deposu</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, sans-serif; line-height: 1.6;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem;
+  }
+  h1 { display: flex; align-items: center; gap: .75rem; font-size: 1.6rem; }
+  h1 img { width: 2.5rem; height: 2.5rem; }
+  pre {
+    background: rgba(127,127,127,.14); padding: .9rem 1rem;
+    border-radius: .5rem; overflow-x: auto;
+  }
+  code { font-family: ui-monospace, monospace; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+<h1><img src="simge.svg" alt=""> Tefsir Defteri</h1>
+
+<p>
+  Kur'an-i Kerim tefsirlerini cesitli kaynaklardan indirip duzenleyen ve
+  EPUB, PDF veya HTML e-kitap olarak disa aktaran masaustu uygulamasi.
+</p>
+
+<h2>Kurulum</h2>
+<p>Depoyu ekleyin:</p>
+<pre><code>flatpak remote-add --if-not-exists tefsir-defteri https://vktx71.github.io/tefsir-defteri-depo/tefsir-defteri.flatpakrepo</code></pre>
+
+<p>Uygulamayi kurun:</p>
+<pre><code>flatpak install tefsir-defteri io.github.vktx71.TefsirDefteri</code></pre>
+
+<p>Calistirin:</p>
+<pre><code>flatpak run io.github.vktx71.TefsirDefteri</code></pre>
+
+<h2>Guncelleme</h2>
+<pre><code>flatpak update io.github.vktx71.TefsirDefteri</code></pre>
+
+<h2>Kaldirma</h2>
+<pre><code>flatpak uninstall io.github.vktx71.TefsirDefteri
+flatpak remote-delete tefsir-defteri</code></pre>
+
+<footer>
+  Kaynak kodu ve sorun bildirimi:
+  <a href="https://github.com/vktx71/tefsir-defteri">github.com/vktx71/tefsir-defteri</a><br>
+  Lisans: GPL-3.0-only
+</footer>
+</body>
+</html>
