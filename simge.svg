@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Tefsir Defteri</title>
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d6b52"/>
+      <stop offset="1" stop-color="#0d3b2c"/>
+    </linearGradient>
+    <linearGradient id="sayfaSol" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efe6d2"/>
+      <stop offset="1" stop-color="#fbf6ea"/>
+    </linearGradient>
+    <linearGradient id="sayfaSag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbf6ea"/>
+      <stop offset="1" stop-color="#efe6d2"/>
+    </linearGradient>
+    <linearGradient id="altin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0cd77"/>
+      <stop offset="1" stop-color="#c9963a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Zemin -->
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#zemin)"/>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="none" stroke="#f0cd77" stroke-opacity="0.28" stroke-width="1.5"/>
+
+  <!-- Acik defter -->
+  <g>
+    <!-- Sol sayfa -->
+    <path d="M24 40 C36 34 52 34 62 40 L62 94 C52 88 36 88 24 94 Z" fill="url(#sayfaSol)"/>
+    <!-- Sag sayfa -->
+    <path d="M104 40 C92 34 76 34 66 40 L66 94 C76 88 92 88 104 94 Z" fill="url(#sayfaSag)"/>
+    <!-- Sirt -->
+    <path d="M62 40 L62 94 L66 94 L66 40 Z" fill="#c9963a" fill-opacity="0.55"/>
+  </g>
+
+  <!-- Sol sayfa satirlari (saga hizali: Arapca metin) -->
+  <g stroke="#b9ab8b" stroke-width="2.6" stroke-linecap="round" opacity="0.85">
+    <line x1="33" y1="50" x2="56" y2="50"/>
+    <line x1="38" y1="59" x2="56" y2="59"/>
+    <line x1="31" y1="68" x2="56" y2="68"/>
+    <line x1="41" y1="77" x2="56" y2="77"/>
+  </g>
+
+  <!-- Sag sayfa satirlari (sola hizali: ceviri/notlar) -->
+  <g stroke="#b9ab8b" stroke-width="2.6" stroke-linecap="round" opacity="0.85">
+    <line x1="72" y1="50" x2="95" y2="50"/>
+    <line x1="72" y1="59" x2="90" y2="59"/>
+    <line x1="72" y1="68" x2="97" y2="68"/>
+    <line x1="72" y1="77" x2="87" y2="77"/>
+  </g>
+
+  <!-- Kamis kalem -->
+  <g transform="rotate(38 92 92)">
+    <rect x="88" y="60" width="8" height="34" rx="2.5" fill="url(#altin)"/>
+    <rect x="88" y="60" width="8" height="34" rx="2.5" fill="none" stroke="#8a6420" stroke-opacity="0.35" stroke-width="0.8"/>
+    <path d="M88 94 L96 94 L92 106 Z" fill="#2c2116"/>
+    <path d="M91.2 100 L92.8 100 L92 106 Z" fill="#f0cd77"/>
+  </g>
+</svg>
